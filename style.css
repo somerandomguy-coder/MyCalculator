@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 40px;
+}
+
+h1 {
+    font-size: 70px;
+}
+
+body {
+    height: 100vh;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+
+.calculator {
+    display: grid;
+    grid-template: 
+        [row1-start] "display display display display " 2fr [row1-end]
+        [row2-start] "n7 n8 n9 div" 1fr [row2-end]
+        [row3-start] "n4 n5 n6 mul" 1fr [row3-end]
+        [row4-start] "n1 n2 n3 min" 1fr [row4-end]
+        [row5-start] "cl n0 dt pls" 1fr [row5-end]
+        [row6-start] "equal equal equal equal" 1fr [row6-end]
+        / auto;
+    width: 30vw;
+    height: 80vh;
+    padding: 40px;
+    gap: 8px;
+    border: 8px solid #ff5bff;
+    border-radius: 20px;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: inherit;
+    color: #2ac9f9;
+    border: 4px solid #2ac9f9;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+button:active {
+    background-color: #3e8e41;
+    transform: translateY(4px);
+  }
+
+.display, button {
+    border-radius: 10px;
+}
+
+/* Assign grid area */
+.display {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    font-size: 69px;
+    grid-area: display;
+    padding: 10px;
+    color: #8aff00;
+    border: 4px solid #8aff00;
+}
+
+.n1 {
+    grid-area: n1;
+}
+
+.n2 {
+    grid-area: n2;
+}
+
+.n3 {
+    grid-area: n3;
+}
+
+.n4 {
+    grid-area: n4;
+}
+
+.n5 {
+    grid-area: n5;
+}
+
+.n6 {
+    grid-area: n6;
+}
+
+.n7 {
+    grid-area: n7;
+}
+
+.n8 {
+    grid-area: n8;
+}
+
+.n9 {
+    grid-area: n9;
+}
+
+.n0 {
+    grid-area: n0;
+}
+
+.clear {
+    grid-area: cl;
+}
+
+.dot {
+    grid-area: dt;
+}
+
+.plus {
+    grid-area: pls;
+}
+
+.min {
+    grid-area: min;
+}
+
+.mul {
+    grid-area: mul;
+}
+
+.div {
+    grid-area: div;
+}
+
+.equal {
+    grid-area: equal;
+}
