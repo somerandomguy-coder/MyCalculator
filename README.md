@@ -5,3 +5,5 @@
 - The input consist of two numbers and one operator in the middle. (e.g., 6+9)
 - Press the "=" button
 - The result is displaying on the screen
+
+Creator: Nam Le
