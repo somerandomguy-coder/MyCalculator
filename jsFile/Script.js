@@ -11,7 +11,7 @@ document.addEventListener("click", (e)=>{
     } else if (["div", "mul", "min", "plus"].includes(e.target.className)) {
         pushOperatorToStack(e);
         dot.className = "dot";
-        display.textContent = operator;
+        display.textContent = pretier(operator);
         console.log(stack);
     } else if (e.target.className == "equal") {
         stack.push(+num);
@@ -38,6 +38,18 @@ document.addEventListener("click", (e)=>{
         dot.className = "dot";
     }
 })
+function pretier(op){
+    switch (op){
+        case "plus":
+            return "+";
+        case "min":
+            return "-";
+        case "mul":
+            return "x";
+        case "div":
+            return "/";
+    }
+}
 
 function roundTo2Dec(num){
     return Math.round(num*100)/100;
