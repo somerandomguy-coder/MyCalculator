@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 40px;
+    font-size: 30px;
 }
 
 h1 {
@@ -11,10 +11,9 @@ h1 {
 
 body {
     height: 100vh;
-    padding: 50px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     background-color: black;
     color: white;
@@ -32,7 +31,7 @@ body {
         / auto;
     width: 30vw;
     height: 80vh;
-    padding: 40px;
+    padding: 20px;
     gap: 8px;
     border: 8px solid #ff5bff;
     border-radius: 20px;
